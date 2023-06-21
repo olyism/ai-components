@@ -1,9 +1,9 @@
-import Bad from './Bad'
-import Check from './Check'
-import Expand from './Expand'
-import Good from './Good'
-import Missing from './Missing'
-import Sparkles from './Sparkles'
+import Bad from './components/Bad'
+import Check from './components/Check'
+import Expand from './components/Expand'
+import Good from './components/Good'
+import Missing from './components/Missing'
+import Sparkles from './components/Sparkles'
 
 const Icon = {
   Bad,
