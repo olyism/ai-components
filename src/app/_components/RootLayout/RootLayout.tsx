@@ -1,5 +1,6 @@
 import type { FC, ReactNode } from 'react'
 import { Poppins } from 'next/font/google'
+import cn from 'classnames'
 import './globals.css'
 
 const poppins = Poppins({
@@ -14,8 +15,8 @@ interface Props {
 }
 
 const RootLayout: FC<Props> = ({ children }) => (
-  <html lang="en">
-    <body className={poppins.variable}>{children}</body>
+  <html className={cn(poppins.variable, 'dark')} lang="en">
+    <body className="dark:bg-dark dark:text-white">{children}</body>
   </html>
 )
 
