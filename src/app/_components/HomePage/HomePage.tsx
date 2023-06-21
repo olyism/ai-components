@@ -1,6 +1,7 @@
 import type { FC } from 'react'
 import Robot from '@/components/Robot'
 import Icon from '@/components/Icon'
+import Button, { Variant } from '@/components/Button'
 
 const HomePage: FC = () => (
   <div>
@@ -12,6 +13,8 @@ const HomePage: FC = () => (
     <Icon.Good />
     <Icon.Missing />
     <Icon.Sparkles />
+    <Button icon={<Icon.Check />} variant={Variant.Primary}>Button</Button>
+    <Button icon={<Icon.Missing />} variant={Variant.Secondary}>Button</Button>
   </div>
 )
 
