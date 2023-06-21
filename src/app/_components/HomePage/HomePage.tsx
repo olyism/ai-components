@@ -1,7 +1,11 @@
 import type { FC } from 'react'
+import Robot from '@/components/Robot'
 
 const HomePage: FC = () => (
-  <div>Hello, world!</div>
+  <div>
+    <p>Hello, world!</p>
+    <Robot />
+  </div>
 )
 
 export default HomePage
