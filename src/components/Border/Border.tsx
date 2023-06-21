@@ -1,21 +1,24 @@
 import type { FC, ReactNode } from 'react'
 import cn from 'classnames'
+import roundedClassName, { RoundedSize } from '@/lib/roundedClassName'
 
 interface Props {
   children: ReactNode
   className?: string
+  roundedSize?: RoundedSize
 }
 
-const Border: FC<Props> = ({ children, className = undefined }) => (
+const Border: FC<Props> = ({ children, className = undefined, roundedSize = RoundedSize.Default }) => (
   <div className={cn(
-    ['m-border-primary', 'rounded', 'relative'],
+    ['m-border-primary', 'relative', 'inline-block'],
+    roundedClassName(roundedSize),
     ['dark:bg-dark', 'bg-white'],
     [
       'after:inset-border-primary',
       'after:absolute',
       'after:bg-purple-radial',
-      'after:rounded',
-      'after:z-under'
+      'after:z-under',
+      `after:${roundedClassName(roundedSize)}`,
     ],
     className
   )}>
