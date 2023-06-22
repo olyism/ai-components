@@ -10,7 +10,7 @@ interface Props {
 
 const Border: FC<Props> = ({ children, className = undefined, roundedSize = RoundedSize.Default }) => (
   <div className={cn(
-    ['m-border-primary', 'relative', 'inline-block'],
+    ['m-border-primary', 'relative'],
     roundedClassName(roundedSize),
     ['dark:bg-dark', 'bg-white'],
     [
