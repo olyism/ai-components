@@ -1,6 +1,6 @@
 import type { FC, ReactNode } from 'react'
 import cn from 'classnames'
-import roundedClassName, { RoundedSize } from '@/lib/roundedClassName'
+import roundedClassName, { RoundedSize } from '../../lib/roundedClassName'
 
 interface Props {
   children: ReactNode
